@@ -6,6 +6,7 @@ func main() {
 	fmt.Println("Hello World")
 }
 
+// go build -gcflags="-S" main.go 2> output.asm
 // go tool objdump -s "main.main" ./main > output.asm
 
 // GOARCH=amd64 GOOS=windows go build main.go
